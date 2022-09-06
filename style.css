@@ -1,0 +1,77 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #eee;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #7ab4f7, #71a9d6, #83b2df); 
+}
+
+.header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+.search {
+    margin: 2rem 0;
+    padding: .75rem;
+    border: solid #666 .1rem;
+    border-radius: .5rem;
+    transition: .1s;
+}
+.search:focus {
+    border: solid #eee .1rem;
+    outline: #7ab4f7 solid .1rem;
+}
+
+.pokeContainer {
+    display: flex;
+    justify-content: center;
+}
+.pokeContainer > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: #666 0 0 10px 1px;
+}
+.pokeContainer .info {
+    padding: 2rem;
+    padding-bottom: .5rem;
+}
+.pokeContainer img {
+    width: 100%;
+}
+.pokeContainer h2 {
+    text-transform: uppercase;
+}
+.pokeContainer .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #5c98dd;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
